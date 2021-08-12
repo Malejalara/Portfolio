@@ -1,0 +1,789 @@
+*{
+margin: 0;
+padding:0;
+}
+/******************************comienzo body*****************************************/
+body{
+    margin: 0;
+    padding:0;
+    background-color:white;
+    width: 100%;
+}
+/*********************************fin body*******************************************/
+
+/******************************comienzo header***************************************/
+header{
+display: flex;
+justify-content: flex-end; /**posiciona el contenido a la derecha**/
+background-color:lightskyblue;
+padding:1.563em 0;/**tamaño de la caja. alto-relleno**/
+width: 100%;  
+box-shadow:0 0 1.25em lightslategrey; /**sombrea la barra de menu**/
+position:fixed;/**pone la barra fija**/
+top:0;/**para que la barra quede justo en el borde superior**/
+}
+nav{
+margin-right:6.25em ;
+}        
+nav>ul{
+list-style: none; /**quita las vinetas**/
+}
+nav>ul>li{
+display:inline; /**pone la lista horizontal, es decir una al lado de la otra**/
+font-family: Arial, Helvetica, sans-serif;
+text-transform: uppercase;
+}
+nav>ul>li>a{
+text-decoration:none;/**quita el subrayado y el color a el un link**/
+color:white;
+margin:1rem; /** crea un espacio entre palabras**/
+}
+nav>ul>li>a:hover{
+color:black;
+}
+nav>ul>li>button{
+background:black;
+color:white;
+border-radius: 1.25em;
+border-color:white;
+padding:0.5em ;
+border-color: white;
+}
+nav>ul>li>button>a{
+text-decoration: none;
+font-family: Arial, Helvetica, sans-serif;
+color: white;
+text-transform: uppercase;
+font-size:0.938rem;
+}
+nav>ul>li>button>a:hover{
+color: lightskyblue;
+}
+/*********************************fin de header**********************************/
+
+/********************************comienzo main***********************************/
+.nombre{
+    display:flex;
+    justify-content:center;
+    height:35em;
+    width: 100%;
+    margin-top: 12em;
+    box-sizing: border-box;
+}
+.nombre .saludo .presentacion{
+    display:flex;
+    justify-content: center;
+    width: 20%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform:initial;
+}
+.nombre .saludo>h3{
+    font-size:2.5rem;
+    margin-top:3.25em;
+}
+.nombre .saludo>h1{
+    font-size:3.75rem;
+    color:lightskyblue;
+}
+.nombre .saludo>p{ 
+    font-size:1.3275rem;
+    color:grey;
+}
+.nombre>div>button{
+    text-decoration: none;
+    font-size:0.938rem;
+    border-radius:20px;
+    background-color: black;
+    border-color: lightskyblue;
+    padding:0.813em 2.813em;/**tañamo del boton**/
+    margin-top:1.875em; /**espacio entre el boton y la letra**/
+}
+.nombre>div>button>a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-transform: uppercase;
+}
+.nombre>div>button>a:hover{
+    color: lightskyblue;
+}
+.nombre .imgsaludo>img{
+    display:flex;
+    justify-content: center;
+    width:80%;
+    margin-left: 5em;
+}
+/***********************************fin main************************************//**falta centar el texto con la imagen**/
+
+/**************************inicio section conocimientos************************/
+.conocimientos{
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    height:60em;
+    width: 100%;
+    padding-bottom:3emm;
+    box-sizing:border-box;
+}
+.conocimientos .misconocimientos .separador{
+    display:flex;
+    justify-content: center;
+    width:100%;
+}
+.conocimientos .texconocimientos{
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform:initial;
+    text-align: center;
+    color: black;
+}
+.conocimientos .texconocimientos>h1{
+    font-size:3.125rem;
+    line-height:2em;
+    margin-top:1em;
+}
+.conocimientos .texconocimientos>p{
+    font-size:1.25rem;
+    margin-bottom:3em;
+}
+.conocimientos .misconocimientos{
+    margin-left:20em;  
+    margin-right:20em;   
+}
+.conocimientos .misconocimientos .imagenconocimientos{
+    display: flex;
+    justify-content:center;
+    float: left; 
+    font-size:7.5rem;
+}
+.conocimientos .misconocimientos .imagenconocimientos>figure{
+    color:white;
+    background-color:black;
+    border:3px solid lightskyblue;
+    border-radius:20px;
+    border-color: lightskyblue;
+    margin:0.03em ; 
+    padding: 0.2em 0.4em;  
+}
+.conocimientos .misconocimientos .imagenconocimientos>figure>figcaption{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:1.563rem;
+    text-align: center;
+    color: lightskyblue;
+}
+.conocimientos .misconocimientos .imagenconocimientos>figure>figcaption:hover{
+    color:black;
+}
+.conocimientos .misconocimientos .imagenconocimientos .html:hover{
+    color:orangered;
+    background-color: rgb(241, 241, 241);
+}
+.conocimientos .misconocimientos .imagenconocimientos .css:hover{
+    color:dodgerblue;
+    background-color: rgb(241, 241, 241);
+}
+.conocimientos .misconocimientos .imagenconocimientos .sass:hover{
+    color:palevioletred;
+    background-color: rgb(241, 241, 241);
+}
+.conocimientos .misconocimientos .imagenconocimientos .java:hover{
+    color:rgb(255, 217, 0);
+    background-color: rgb(241, 241, 241);
+}
+.conocimientos .misconocimientos .imagenconocimientos .react:hover{
+    color:lightskyblue;
+    background-color: rgb(241, 241, 241);
+}
+.conocimientos .misconocimientos .imagenconocimientos .git:hover{
+    color: rgb(255, 92, 28);
+    background-color: rgb(241, 241, 241);
+}
+/*********************************fin imgconocimientos****************************/
+
+/*********************************inicio quotes***********************************/
+.quotes{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    height:35.938em;
+    width: 100%;
+    background-color:black;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    text-transform: initial;
+    box-sizing: border-box;
+}
+.quotes>h1>i{
+    font-size:5rem;
+    line-height:12.5rem;
+}
+.quotes>blockquote>p{
+    font-size:1.875rem;
+}
+.quotes>h3{
+    font-size:1.875rem;
+    line-height:4em;
+    text-transform: capitalize;
+}
+/************************************fin quotes***********************************/
+
+/********************************inicio proyectos*********************************/
+.proyectos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    height:90em;
+    width: 100%;
+    padding-top:3.125em;
+    box-sizing: border-box;  
+}
+.proyectos .texproyectos{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    text-align: center;
+    text-transform:  initial;
+}
+.proyectos .texproyectos>h1{
+    font-size:3.125rem;
+    line-height:3em;
+
+}
+.proyectos .texproyectos>p{
+    font-size:1.25rem;
+    margin-bottom: 3em;
+}
+.proyectos .misproyectos{
+    align-content: center;
+    margin-left:5em;
+}
+.proyectos .misproyectos .imagenproyectos{
+    display: flex;
+    justify-content:center;
+    float:left;
+    margin:0.2em;
+    align-content: center;
+    width: 30%;  
+}
+.proyectos .misproyectos .imagenproyectos>figure{
+    width:100%;
+    background-color:black;
+    padding:1em 2em;
+    border-radius:20px;
+    border:solid 3px lightskyblue;
+}
+.proyectos .misproyectos .imagenproyectos>figure:hover{
+    background-color:rgb(241, 241, 241);
+    border-color: black;
+}
+.proyectos .misproyectos .imagenproyectos>figure>figcaption{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:1.563rem;
+    color:lightskyblue;
+    line-height:0.3em;
+}
+.proyectos .misproyectos .separador{
+    display:flex;
+    justify-content: center;
+    width:70%;
+    margin-left:6.5em;
+    padding-top:8.125em;
+}
+
+/**********************************fin proyectos**********************************/
+
+/********************************inicio contacto***********************************/
+.contacto{
+    display: flex;
+    justify-content:space-between;
+    height: 43em;
+    width: 80%;
+    background-color: rgb(241, 241, 241);
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 8em;  
+    border-radius:20px; 
+    box-sizing: border-box; 
+}
+.contacto .contactame{
+    width: 60%;
+    margin: 3.5em;  
+}
+.contacto .contactame>h2{
+    font-size:2.5rem;
+    line-height: 2.4em;
+}
+.contacto .contactame>p{
+    font-size:1.2rem;
+    margin-bottom: 2em;
+}
+.contacto .contactame>ol{
+    list-style: none;
+    line-height: 3em;
+    font-size: 1.2rem;
+}
+.contacto .contactame>ol>li>a{
+    text-decoration: none;
+    color: lightskyblue;
+    margin: 0 2em;
+}
+.contacto .contactame>ol .redes>a>i:hover{
+    border-radius: 100%;
+    padding: 0.5em;
+    background-color:lightskyblue;
+    color:black;
+    text-decoration-color: lightskyblue;
+}
+.contacto .contactame>ol .fb>a>i:hover{
+    border-radius: 100%;
+    padding: 0.5em 0.7em;
+    background-color:lightskyblue;
+    color:black;
+    text-decoration-color: lightskyblue;
+}
+.contacto .contactame>ol :hover{
+    color: lightskyblue;
+}
+.contacto .formulario{
+    width: 50%;
+    margin: 3.3em 4.3em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:0.9rem;
+}
+.contacto .formulario>h2{
+    font-size:2.5rem;
+    line-height:2.8em;
+}
+.contacto .formulario>ul>li{
+    list-style: none;
+    display: inline;
+    margin-right:9.2em;
+}
+.contacto .formulario>input{
+    padding:0.8em 0.8em;
+    margin:0.6em 0 0.6em 0.6em;
+    border-radius:20px;
+    border-color: lightskyblue;
+}
+.contacto .formulario>label>input{
+    padding: 0.7em 8.5em;
+    margin:0.7em 0 0.7em 0.7em;
+    border-radius:20px;
+    border-color: lightskyblue;
+}
+.contacto .formulario .textarea{
+    padding:3em 1.5em;
+    margin:0.7em 0 0.7em 0.7em;
+    border-radius:20px;
+    border:2px solid lightskyblue;
+}
+.contacto .formulario .botonformulario{
+    font-size:1rem;
+    border-radius:30px;
+    color:white;
+    background-color: black;
+    padding: 0.9em 2.5em;/**tañamo del boton**/
+    margin-top:1em; /**espacio entre el boton y la letra**/
+    border-color: lightskyblue;
+}
+/**********************************fin contacto************************************/
+
+/*********************************inicio footer***********************************/
+footer{
+    display: flex;
+    justify-content: center;
+    flex-direction:column;       
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    height:17em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.barrafooter{
+    list-style: none;
+    text-transform: uppercase;
+}
+.barrafooter>li{
+    display:inline;
+    margin: 0 0.8em;
+}
+.barrafooter>li>a{
+  text-decoration: none;
+  color: white;
+}
+.barrafooter>li>a:hover{
+    color:lightskyblue;
+}
+.iconosfooter >li{
+    display: inline;
+    justify-content: center;  
+}
+.iconosfooter>li>a>i{
+    text-decoration: none;
+    font-size:1.7rem;
+    color:black;
+    background-color:white;
+    border-radius: 100%; /**circulo**/
+    padding: 0.25em 0.3em;  /**relleno del circulo-radio**/
+    margin:1em 0.7em; /**espacio entre los iconnos y las lineas de texto**/
+}
+.iconosfooter> .fb>a>i{
+    font-size:1.7rem;
+    color:black;
+    background-color:white;
+    border-radius: 100%; /**circulo**/
+    padding: 0.25em 0.4em;  /**relleno del circulo-radio**/
+    margin: 1em 0.7em; /**espacio entre los iconnos y las lineas de texto**/
+}
+.iconosfooter>li>a>i:hover{
+    color:white;
+    background-color: lightskyblue;
+}
+footer>p{
+    text-transform: initial;
+}
+
+/***********************************fin footer************************************/
+/****************************@media**********************************************/
+/**@media screen and (max-widht:1200px)/***no tengo monitor, nopodia visualizar como se**/
+@media screen and (max-width:1024px){
+    .nombre{
+        display: block;
+        height: auto;
+        text-align: center;
+    }
+    .conocimientos{
+        height: auto;
+        padding-bottom: 3em;
+    }
+    .conocimientos .misconocimientos .separador{
+        width: 70%;
+        margin-top: 3em;
+        margin-left: 9em;
+    }
+    .conocimientos .texconocimientos{
+        margin: 0 3em 3em 3em;
+    }
+    .conocimientos .misconocimientos .imagenconocimientos{
+        margin: 0 3em;
+    }
+    .proyectos{
+        height: auto;
+        padding-top:0;
+    }
+    .proyectos .texproyectos{
+        margin: 0 3em;
+    }
+    .proyectos .misproyectos .separador{
+        padding-top: 4em;
+    }
+    .contacto{
+        display: block;
+        height: auto;
+        width: 80%;
+        margin: 3em 6em;
+    }
+    .contacto .contactame{
+        width: 70%;
+    }
+    .contacto .formulario{
+        width: 90%;
+        padding-bottom: 1em;
+    }
+    .contacto .formulario>ul>li{
+        margin-right:14em;
+    }
+    .contacto .formulario>input{
+        width: 30%;
+    }
+    .contacto .formulario>label>input{
+        width: 37%;
+    }
+    .contacto .formulario .textarea{
+        width: 62%;
+    }
+    .contacto .formulario .botonformulario{
+        width: 20%;
+    }
+}
+@media screen and (max-width:888px){
+    .contacto .formulario>label>input{
+        width: 33%;
+    }
+}
+@media screen and (max-width:768px){
+    header{
+        display: none;
+    }
+    .nombre{
+        margin-top:0;
+    }
+    .conocimientos .texconocimientos{
+        margin: 0 12em 3em 12em;
+    }
+    .proyectos .misproyectos .imagenproyectos{
+        width: 44%;
+        margin-right: 0.5em;
+    }
+    .proyectos .misproyectos .separador{
+        margin-left:5em;
+    }
+    .contacto .formulario>ul>li{
+        margin-right:10em;
+    }
+    .contacto .formulario>label>input{
+        width: 30%;
+    }
+}
+@media screen and (max-width:730px){
+    .conocimientos .misconocimientos .separador{
+        width: 55%;
+        margin-top: 3em;
+        margin-left: 13em;
+    }
+    .proyectos .misproyectos .imagenproyectos{
+        width: 42%;
+        margin-right: 0.5em;
+    }
+    .contacto{
+        width: 100%;
+        background-color: white;
+        margin: 2em;
+    }
+    .contacto .formulario>ul>li{
+        margin-right:9em;
+    }
+}
+@media screen and (max-width:600px){
+    .nombre .imgsaludo>img{
+        margin-left: 3.5em;
+    }
+    .conocimientos .misconocimientos .separador{
+        width: 45%;
+        margin-left: 16em;
+    }
+    .conocimientos .texconocimientos>h1{
+        font-size:3rem;
+    }
+    .conocimientos .texconocimientos{
+        margin: 0 16em 3em 16em;
+    }
+    .proyectos .misproyectos .imagenproyectos{
+        width: 70%;
+        margin-left: 2em;
+    }
+    .proyectos .misproyectos .separador{
+        margin-left:2.5em;
+    }
+    .contacto .formulario .botonformulario{
+        width: 30%;
+    }
+}
+@media screen and (max-width:508px){
+    .nombre .imgsaludo>img{
+        margin-left: 2em;
+    }
+    .conocimientos .misconocimientos .separador{
+        width: 40%;
+        margin-left:17em;
+        margin-top: 0.4em;
+    }
+    
+    .conocimientos .texconocimientos{
+        margin: 0 19em 3em 19em;
+    }
+    .conocimientos .texconocimientos>h1{
+        font-size:2rem;
+    }
+    .contacto .formulario>label>input{
+        width: 22%;
+    }
+    .barrafooter>li{
+        margin: 0 0.2em;
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width:480px) {
+    .proyectos .misproyectos .imagenproyectos{
+        width: 70%;
+        margin-left: 1.1em;
+    }
+    .barrafooter>li{
+        margin: 0 0.2em;
+        font-size: 0.9rem;
+    }
+}
+@media screen and (max-width:440px){
+    .nombre .saludo>h1{
+        font-size:3.2rem;
+    }
+    .conocimientos .misconocimientos .separador{
+        width: 30%;
+        margin-left:20em;
+        margin-top: 0;
+    }
+    .proyectos .misproyectos .imagenproyectos{
+        width: 70%;
+        margin-left: 0.5em;
+    }
+    .contacto{
+        margin:0.5em;
+    }
+    .contacto .contactame>ol{
+        font-size: 0.9rem;
+    }
+    .contacto .formulario>label>input{
+        width: 18%;
+    }
+}
+@media screen and (max-width:400px){
+    .nombre .saludo>h3{
+        font-size:2rem;
+    }
+    .nombre .saludo>h1{
+        font-size:3rem;
+    }
+    .nombre .saludo>p{
+        font-size:1.2rem;
+    }
+    .conocimientos .texconocimientos{
+        margin: 0 21em 3em 21em;
+    }
+    .conocimientos .texconocimientos>h1{
+        line-height:1em;
+        margin-bottom: 1.5em;
+    }
+    .proyectos .texproyectos>h1{
+        font-size:2.5rem;
+    }
+    .proyectos .misproyectos .imagenproyectos{
+        width: 80%;
+        margin-left: -0.2em;
+    }
+    .proyectos .misproyectos .separador{
+        margin-left:0.8em;
+    }
+    .contacto .formulario>ul>li{
+        margin-right:5.5em;
+    }
+    .contacto .formulario>label>input{
+        width: 14%;
+    }
+    footer .barrafooter>li{
+        display: none;
+    }
+}
+@media screen and (max-width:360px){
+    .nombre .saludo>h1{
+        font-size:2.6rem;
+    }
+    .conocimientos .misconocimientos .separador{
+        margin-left:21em;
+    }
+    .proyectos .texproyectos>h1{
+        line-height: 1em;
+        margin:2em 0 1.5em 0;
+    }
+    .contacto .contactame{
+        margin:2em 2.5em;
+    }
+    .contacto .formulario{
+        margin:2em 2.5em;
+    }
+    .contacto .formulario>label>input{
+        padding:0.7em 7.7em;
+    }
+    .iconosfooter>li>a>i{
+        margin:1em 0.4em;
+    }
+    .contacto .formulario .botonformulario{
+        width: 40%;
+    }
+}
+@media screen and (max-width:320px) {
+    .proyectos .misproyectos .imagenproyectos{
+        width: 90%;
+        margin-left: -1.5em;
+    }
+    .contacto .formulario>label>input{
+        padding:0.7em 7em;
+    }
+    .contacto .contactame>ol>li>a{
+        margin: 0 1em;
+    }
+
+}
+
+/**@media  screen and (max-width:320px) {
+    .nombre .imgsaludo{
+        margin-left: -4em;
+    }
+    .conocimientos .misconocimientos .separador{
+        width: 30%;  /**en este tamaño no fui capaz de centarla imagen**/
+    /**}
+    .conocimientos .texconocimientos{
+        margin: 0 20em 3em 20em;
+    }
+    .conocimientos .texconocimientos>h1{
+        font-size:2rem;
+    }
+    .conocimientos .texconocimientos>p{
+        font-size:0.8rem;
+    }
+    .proyectos .misproyectos .imagenproyectos{
+        width: 100%;
+        margin-left: -2.5em;
+    }
+    .proyectos .misproyectos .separador{
+        width: 30%;
+        margin-left: -1em;
+    }
+    .contacto{
+        margin-left:-0.09em;
+    }
+    .contacto .contactame{
+        width: 90%;
+        margin: 3.3em 0.9em;
+    }
+    .contacto .contactame>ol{
+        font-size: 0.9rem;
+    }
+    .contacto .contactame>ol>li>a{
+        margin: 0 1em;
+    }
+    .contacto .formulario>ul>li{
+        list-style: none;
+        display: inline;
+        margin-right:3.5em;
+    }
+    .contacto .formulario{
+        width: 90%;
+        margin: 3.3em 0.9em;
+    }
+    .contacto .formulario>input{
+        padding:0.7em 0.01em;
+        margin:0.4em 0 0.4em 0.1em;
+        width: 40%;
+    }
+    .contacto .formulario>label>input{
+        padding: 0.7em 0.5em;
+        margin:0.7em 0 0.7em 0.1em;
+        width: 80%;
+    }
+    .contacto .formulario .textarea{
+        padding:1em 1em;
+        margin:0.7em 0 0.7em 0.2em;
+        width: 75%;
+    }
+    .contacto .formulario .botonformulario{
+        padding: 0.9em 1.5em;
+    }
+    footer .barrafooter>li{
+        display: none;
+    }
+    .iconosfooter>li>a>i{
+        margin:1em 0.4em;
+    }**/   
+}
+/**hola profe, yo hice lo que mejor que pude con las medias pero no pude con el espacio en blanco. apruebe por favor...**/
